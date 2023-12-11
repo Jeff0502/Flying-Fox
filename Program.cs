@@ -1,3 +1,3 @@
 ﻿
-using var game = new Simple_ECS_Sharp.Game1();
+using var game = new FlyingFox.FlyingFox();
 game.Run();
