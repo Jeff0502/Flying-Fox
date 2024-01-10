@@ -1,3 +1,3 @@
 ﻿
-using var game = new FlyingFox.FlyingFox();
+using var game = new FlyingFox.Flyingfox();
 game.Run();

@@ -4,16 +4,28 @@ using Microsoft.Xna.Framework.Graphics;
 
 public class Sprite
 {
-    public Transform transform;
+    public Position position;
 
     public Texture2D texture;
 
-    public Rectangle sourceRectangle;
+    public int width;
 
-    public Sprite(Texture2D texture, Transform transform, Rectangle source)
+    public int height;
+
+    public Vector2 origin;
+
+    public Sprite(Texture2D texture, Position position)
     {
         this.texture = texture;
-        this.transform = transform;
-        this.sourceRectangle = source;
+        this.position = position;
+        width = texture.Width;
+        height = texture.Height;
+
+        origin = new Vector2(width / 2, height / 2);
+    }
+
+    public void Draw(SpriteBatch _spriteBatch)
+    {
+        _spriteBatch.Draw(texture, position.Transform, null, Color.White, 0.0f, origin, 1, SpriteEffects.None, 0);
     }
 }
