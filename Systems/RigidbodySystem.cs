@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FlyingFox.Components;
-using Jumble.ECS;
+﻿using FlyingFox.Components;
+using FlyingFox.ECS;
 
 namespace FlyingFox.Systems
 {

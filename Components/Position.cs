@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Xna.Framework;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Xna.Framework;
 
 namespace FlyingFox.Components
 {
@@ -23,7 +18,7 @@ namespace FlyingFox.Components
                 X = value.X;
                 Y = value.Y;
             }
-        }       
+        }
 
         public Position(Vector2 position)
         {

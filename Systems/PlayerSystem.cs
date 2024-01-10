@@ -1,14 +1,7 @@
-﻿using Jumble.ECS;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FlyingFox.Components;
+using FlyingFox.ECS;
 using Microsoft.Xna.Framework;
-using FlyingFox.Components;
+using Microsoft.Xna.Framework.Input;
 
 namespace FlyingFox.Systems
 {

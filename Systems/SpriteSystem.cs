@@ -1,9 +1,5 @@
-﻿using Jumble.ECS;
+﻿using FlyingFox.ECS;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlyingFox.Systems
 {
@@ -22,7 +18,7 @@ namespace FlyingFox.Systems
         {
             var view = registry.View<Sprite>();
 
-            foreach(var e in view)
+            foreach (var e in view)
             {
                 Sprite s = registry.GetComponent<Sprite>(e);
             }

@@ -1,10 +1,8 @@
-﻿using Microsoft.Xna.Framework;
+﻿using FlyingFox.Systems;
+using FlyingFox.ECS;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Jumble.TextureAtlas;
-using Jumble.ECS;
-using FlyingFox.Components;
-using FlyingFox.Systems;
 
 namespace FlyingFox
 {

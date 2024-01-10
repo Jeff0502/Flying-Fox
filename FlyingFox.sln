@@ -4,11 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyingFox", "FlyingFox.csproj", "{BAFF50FA-ECF7-4A44-BF2B-C285F655AB62}"
-	ProjectSection(ProjectDependencies) = postProject
-		{ACB15005-46EF-4763-8161-4E814FDF7825} = {ACB15005-46EF-4763-8161-4E814FDF7825}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jumble", "..\Jumble\Jumble\Jumble.csproj", "{ACB15005-46EF-4763-8161-4E814FDF7825}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +15,6 @@ Global
 		{BAFF50FA-ECF7-4A44-BF2B-C285F655AB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAFF50FA-ECF7-4A44-BF2B-C285F655AB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAFF50FA-ECF7-4A44-BF2B-C285F655AB62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACB15005-46EF-4763-8161-4E814FDF7825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACB15005-46EF-4763-8161-4E814FDF7825}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACB15005-46EF-4763-8161-4E814FDF7825}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACB15005-46EF-4763-8161-4E814FDF7825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
