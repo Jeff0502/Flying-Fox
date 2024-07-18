@@ -4,7 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/UserData Archive/jeffj/source/repos/FlyingFox/Content/assets.png</File>
+    <File>/home/christiaan/Documents/repos/Flying-Fox/Content/assets.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/UserData Archive/jeffj/source/repos/FlyingFox/Content/assets.png</SourceFile>
-  <SourceTime>2024-01-08T12:41:17.100831+02:00</SourceTime>
-  <DestFile>D:/UserData Archive/jeffj/source/repos/FlyingFox/Content/bin/DesktopGL/Content/assets.xnb</DestFile>
-  <DestTime>2024-01-10T12:51:53.9963813+02:00</DestTime>
+  <SourceFile>/home/christiaan/Documents/repos/Flying-Fox/Content/assets.png</SourceFile>
+  <SourceTime>2024-07-18T09:16:55.8321332+02:00</SourceTime>
+  <DestFile>/home/christiaan/Documents/repos/Flying-Fox/Content/bin/DesktopGL/Content/assets.xnb</DestFile>
+  <DestTime>2024-07-18T10:00:47.8307547+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

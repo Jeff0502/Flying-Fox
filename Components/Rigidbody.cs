@@ -4,11 +4,10 @@ namespace FlyingFox.Components
 {
     internal class Rigidbody
     {
-        public Vector2 resultantForce;
-
+        public int mass = 1;
         public Position position;
 
-        public Vector2 oldPosition, velocity;
+        public Vector2 oldPosition, velocity, acceleration;
 
         public Vector2 min
         {
@@ -28,31 +27,35 @@ namespace FlyingFox.Components
 
         public float width, height;
 
-        public Rigidbody(Position position, int width, int height)
+        public Rigidbody(Position position, int width, int height, int mass)
         {
+            acceleration = Vector2.Zero;
             this.position = position;
             this.oldPosition = position.Transform;
             this.width = width;
             this.height = height;
+            this.mass = mass;
         }
 
         public void Update(float deltaTime)
         {
-            velocity = (position.Transform - oldPosition);
+            velocity = position.Transform - oldPosition;
+            velocity *= 0.9f;
 
             oldPosition = position.Transform;
 
             // Make the refresh rate dynamic
-            position.Transform = position.Transform + velocity + resultantForce * deltaTime * deltaTime * Flyingfox.REFRESH_RATE;
-
-            resultantForce = Vector2.Zero;
+            position.Transform = position.Transform + velocity + acceleration;
+            
+            acceleration = Vector2.Zero;
 
             ApplyConstraints();
         }
 
+        // Fnet = ma
         public void ApplyForce(Vector2 force)
         {
-            resultantForce += force;
+            acceleration += force / mass;
         }
 
         public void ApplyConstraints()

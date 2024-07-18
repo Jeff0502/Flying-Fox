@@ -3,6 +3,8 @@ using FlyingFox.ECS;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Reflection.Metadata;
 
 namespace FlyingFox
 {
@@ -12,13 +14,15 @@ namespace FlyingFox
         private SpriteBatch _spriteBatch;
 
         // The bounds of the map
-        public readonly static int MAP_WIDTH = 600, MAP_HEIGHT = 400;
+        public readonly static int MAP_WIDTH = 640, MAP_HEIGHT = 360;
 
         // The bounds of the virtual game window 
-        private const int VIRTUAL_WIDTH = 320, VIRTUAL_HEIGHT = 180;
+        private const int VIRTUAL_WIDTH = 640, VIRTUAL_HEIGHT = 360;
 
         // The bounds of the screen
         private int SCREEN_WIDTH, SCREEN_HEIGHT;
+
+        public readonly static float GRAVITY = 1, PLAYER_SPEED = 5;
 
         public const int REFRESH_RATE = 60;
 
@@ -48,8 +52,8 @@ namespace FlyingFox
             registry = new Registry(100);
 
             // Create the virtual 'display'
-            _graphics.PreferredBackBufferWidth = 600;
-            _graphics.PreferredBackBufferHeight = 400;
+            _graphics.PreferredBackBufferWidth = VIRTUAL_WIDTH;
+            _graphics.PreferredBackBufferHeight = VIRTUAL_HEIGHT;
             _graphics.ApplyChanges();
 
             SCREEN_WIDTH = _graphics.GraphicsDevice.Adapter.CurrentDisplayMode.Width;

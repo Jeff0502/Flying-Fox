@@ -8,7 +8,7 @@ namespace FlyingFox
 
         private static KeyboardState newState;
 
-        public bool GetState(Keys key)
+        public static bool IsKeyPressed(Keys key)
         {
             return newState.IsKeyDown(key);
         }
