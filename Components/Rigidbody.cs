@@ -5,6 +5,7 @@ namespace FlyingFox.Components
     internal class Rigidbody
     {
         public int mass = 1;
+        
         public Position position;
 
         public Vector2 oldPosition, velocity, acceleration;

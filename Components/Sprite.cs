@@ -14,6 +14,8 @@ public class Sprite
 
     public Vector2 origin;
 
+    public SpriteEffects effects = SpriteEffects.None;
+
     public Sprite(Texture2D texture, Position position)
     {
         this.texture = texture;
@@ -26,6 +28,6 @@ public class Sprite
 
     public void Draw(SpriteBatch _spriteBatch)
     {
-        _spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, width, height), null, Color.White, 0.0f, origin, SpriteEffects.None, 0);
+        _spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, width, height), null, Color.White, 0.0f, origin, effects, 0);
     }
 }
